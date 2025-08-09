@@ -1,4 +1,4 @@
-# 7/9/2024
+# 8/9/2025
 # A Program to download and convert Youtube videos into mp3 files
 
 import Functions as pirate
@@ -40,9 +40,10 @@ def thread_ripper(song):
 			pirate.reorganizer(song_filepath)
 		except:
 			pass
-		
+
 		# Defines import variables to be used with the different functions
 		pirate.mp3ify(song_name, link_url, song_path)
+
 		pirate.track_record(song_name, file_resource, song_artist, song_album, song_track, song_art_path)
 		
 	except Exception as e:
@@ -52,7 +53,9 @@ def thread_ripper(song):
 
 
 # Opens the file
-document = ODSReader(u'fix.ods', clonespannedcolumns=True)
+document = ODSReader(u'list.ods', clonespannedcolumns=True)
+
+print("Found Document")
 
 # Adds document data as a nested list. Rows First, Collumns Second.
 table = document.getSheet(u'Sheet1')
@@ -60,5 +63,9 @@ table = document.getSheet(u'Sheet1')
 # Length of the table
 len_table = len(table)
 
+print("Read Document")
+
 for i in range(0, len_table):
 	thread_ripper(table[i])
+
+print("Finished Scrapping")
