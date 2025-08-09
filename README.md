@@ -29,3 +29,6 @@ If you get an `The syntax of the command is incorrect.`, this means your filepat
 If you get an `A subdirectory or file <BLANK> already exists.`, this is not really an issue, more of a side effect of using mkdir on differnt systems (Windows vs. Unix).
 
 Finally, you may have issues downloading songs marked as explicit or age rated. Unfourtounatly, this is on Youtube's end to control. Try finding the same song in a different video and test your results.
+
+### Operation
+You can find an executable in the `dist` folder. Runnning this `.exe` file with your `.ods` file in the same folder should work for scrapping your music. Congrats!!
