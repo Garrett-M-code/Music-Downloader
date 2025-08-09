@@ -26,4 +26,6 @@ If you get an `HTTP 400: Bad Request Error`, this is an issue with pytubefix and
 
 If you get an `The syntax of the command is incorrect.`, this means your filepath is incorrect. Either the artwork, or the file destination is incorrectly formatted in your spreadsheet.
 
+If you get an `A subdirectory or file <BLANK> already exists.`, this is not really an issue, more of a side effect of using mkdir on differnt systems (Windows vs. Unix).
+
 Finally, you may have issues downloading songs marked as explicit or age rated. Unfourtounatly, this is on Youtube's end to control. Try finding the same song in a different video and test your results.
