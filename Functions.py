@@ -3,7 +3,7 @@
 
 import math
 import os
-from pytube import YouTube
+from pytubefix import YouTube
 import music_tag
 from PIL import Image
 
@@ -87,7 +87,6 @@ def reorganizer(file_path):
 	
 	# Makes a new folder insde the Music folder for each individual folder
 	os.system("mkdir " + file_path)
-	
 	
 	
 def error_tracker(e, function_name):
